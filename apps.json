@@ -1,70 +1,87 @@
 {
-  "launcher": {
-    "version": "1.0.0",
-    "url": "",
-    "sha256": "",
-    "notes": "Первая версия лаунчера"
-  },
-  "apps": [
-    {
-      "id": "nebula",
-      "name": "Nebula",
-      "tagline": "Анимированные курсоры для Windows",
-      "description": "Nebula — кастомизатор курсоров: GIF-скины, эффекты вращения, пульса и шлейфа, полный набор курсоров Windows, магазин от сообщества, пиксельный редактор, друзья и подарки скинов.",
-      "version": "2.5.0",
-      "url": "",
-      "sha256": "",
-      "size": 0,
-      "exe": "Nebula.exe",
-      "accent": "#FF7A00",
-      "icon": "cursor",
-      "status": "live",
-      "tags": ["Курсоры", "GIF-скины", "Эффекты", "Редактор"],
-      "changelog": [
-        "Полный набор курсоров Windows: текст, ожидание, изменение размера",
-        "Редактор 64×64, слои и кадры с калькой",
-        "Игровой режим и правила скинов для отдельных программ"
-      ]
-    },
-    {
-      "id": "soundpad",
-      "name": "SoundPad",
-      "tagline": "Звуки в Discord одной кнопкой",
-      "description": "SoundPad — саундпад для голосовых чатов и стримов: горячие клавиши и кнопки мыши, вывод в микрофон через виртуальный кабель, магазин звуков от сообщества, друзья и подарки звуков.",
-      "version": "1.0.0",
-      "url": "",
-      "sha256": "",
-      "size": 0,
-      "exe": "SoundPad.exe",
-      "accent": "#FF7A00",
-      "icon": "sound",
-      "status": "live",
-      "tags": ["Саундпад", "Discord", "Горячие клавиши"],
-      "changelog": []
-    },
-    {
-      "id": "zenith",
-      "name": "Zenith",
-      "tagline": "Оверлей-прицел поверх любой игры",
-      "description": "Конструктор прицелов с живым превью, профили под каждую игру, коды для обмена и поддержка нескольких мониторов.",
-      "version": "",
-      "exe": "Zenith.exe",
-      "accent": "#FF7A00",
-      "icon": "crosshair",
-      "status": "soon",
-      "tags": ["Прицелы", "Оверлей"]
-    },
-    {
-      "id": "aurora",
-      "name": "Aurora",
-      "tagline": "Живые обои на рабочий стол",
-      "description": "Видео и интерактивные обои под иконками рабочего стола, магазин обоев от сообщества.",
-      "version": "",
-      "exe": "Aurora.exe",
-      "accent": "#FF7A00",
-      "icon": "wallpaper",
-      "status": "soon",
-      "tags": ["Обои", "Рабочий стол"]
-    }
-  ]
+    "launcher":  {
+                     "version":  "1.0.0",
+                     "url":  "",
+                     "sha256":  "",
+                     "notes":  "Первая версия лаунчера"
+                 },
+    "apps":  [
+                 {
+                     "id":  "nebula",
+                     "name":  "Nebula",
+                     "tagline":  "Анимированные курсоры для Windows",
+                     "description":  "Nebula — кастомизатор курсоров: GIF-скины, эффекты вращения, пульса и шлейфа, полный набор курсоров Windows, магазин от сообщества, пиксельный редактор, друзья и подарки скинов.",
+                     "version":  "2.6.0",
+                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/nebula-v2.6.0/nebula-2.6.0.exe",
+                     "sha256":  "2276A48DD93AD6F32AA711903F4453C45D44060140DAB9DF3FC09EB4B356A206",
+                     "size":  71965042,
+                     "exe":  "Nebula.exe",
+                     "accent":  "#FF7A00",
+                     "icon":  "cursor",
+                     "status":  "live",
+                     "tags":  [
+                                  "Курсоры",
+                                  "GIF-скины",
+                                  "Эффекты",
+                                  "Редактор"
+                              ],
+                     "changelog":  [
+                                       "Полный набор курсоров Windows",
+                                       "Редактор 64x64"
+                                   ],
+                     "released":  "2026-10-22"
+                 },
+                 {
+                     "id":  "soundpad",
+                     "name":  "SoundPad",
+                     "tagline":  "Звуки в Discord одной кнопкой",
+                     "description":  "SoundPad — саундпад для голосовых чатов и стримов: горячие клавиши и кнопки мыши, вывод в микрофон через виртуальный кабель, магазин звуков от сообщества, друзья и подарки звуков.",
+                     "version":  "1.0.0",
+                     "url":  "",
+                     "sha256":  "",
+                     "size":  0,
+                     "exe":  "SoundPad.exe",
+                     "accent":  "#FF7A00",
+                     "icon":  "sound",
+                     "status":  "live",
+                     "tags":  [
+                                  "Саундпад",
+                                  "Discord",
+                                  "Горячие клавиши"
+                              ],
+                     "changelog":  [
+
+                                   ]
+                 },
+                 {
+                     "id":  "zenith",
+                     "name":  "Zenith",
+                     "tagline":  "Оверлей-прицел поверх любой игры",
+                     "description":  "Конструктор прицелов с живым превью, профили под каждую игру, коды для обмена и поддержка нескольких мониторов.",
+                     "version":  "",
+                     "exe":  "Zenith.exe",
+                     "accent":  "#FF7A00",
+                     "icon":  "crosshair",
+                     "status":  "soon",
+                     "tags":  [
+                                  "Прицелы",
+                                  "Оверлей"
+                              ]
+                 },
+                 {
+                     "id":  "aurora",
+                     "name":  "Aurora",
+                     "tagline":  "Живые обои на рабочий стол",
+                     "description":  "Видео и интерактивные обои под иконками рабочего стола, магазин обоев от сообщества.",
+                     "version":  "",
+                     "exe":  "Aurora.exe",
+                     "accent":  "#FF7A00",
+                     "icon":  "wallpaper",
+                     "status":  "soon",
+                     "tags":  [
+                                  "Обои",
+                                  "Рабочий стол"
+                              ]
+                 }
+             ]
 }
