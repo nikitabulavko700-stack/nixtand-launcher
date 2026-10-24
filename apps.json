@@ -37,9 +37,9 @@
                      "tagline":  "Звуки в Discord одной кнопкой",
                      "description":  "SoundPad — саундпад для голосовых чатов и стримов: горячие клавиши и кнопки мыши, вывод в микрофон через виртуальный кабель, магазин звуков от сообщества, друзья и подарки звуков.",
                      "version":  "1.0.0",
-                     "url":  "",
-                     "sha256":  "",
-                     "size":  0,
+                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/soundpad-v1.0.0/soundpad-1.0.0.zip",
+                     "sha256":  "38BD59F4E6A6A25953AC295F3D3C1A6AA51E2C0108AA878E85B5B3F600398B53",
+                     "size":  66510609,
                      "exe":  "SoundPad.exe",
                      "accent":  "#FF7A00",
                      "icon":  "sound",
@@ -51,7 +51,8 @@
                               ],
                      "changelog":  [
 
-                                   ]
+                                   ],
+                     "released":  "2026-10-24"
                  },
                  {
                      "id":  "zenith",
