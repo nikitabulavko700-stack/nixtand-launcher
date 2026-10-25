@@ -11,10 +11,10 @@
                      "name":  "Nebula",
                      "tagline":  "Анимированные курсоры для Windows",
                      "description":  "Nebula — кастомизатор курсоров: GIF-скины, эффекты вращения, пульса и шлейфа, полный набор курсоров Windows, магазин от сообщества, пиксельный редактор, друзья и подарки скинов.",
-                     "version":  "2.6.0",
-                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/nebula-v2.6.0/nebula-2.6.0.exe",
-                     "sha256":  "2276A48DD93AD6F32AA711903F4453C45D44060140DAB9DF3FC09EB4B356A206",
-                     "size":  71965042,
+                     "version":  "2.7.0",
+                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/nebula-v2.7.0/nebula-2.7.0.zip",
+                     "sha256":  "C968F0B28CA0CD27EBCF2432BA6B2CE7FF0345BB1EDEB1A31419AEB7CA73A858",
+                     "size":  66525661,
                      "exe":  "Nebula.exe",
                      "accent":  "#FF7A00",
                      "icon":  "cursor",
@@ -29,7 +29,7 @@
                                        "Полный набор курсоров Windows",
                                        "Редактор 64x64"
                                    ],
-                     "released":  "2026-10-22"
+                     "released":  "2026-10-25"
                  },
                  {
                      "id":  "soundpad",
