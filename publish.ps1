@@ -21,7 +21,16 @@ param(
   [string]   $Repo = "nikitabulavko700-stack/nixtand-launcher"
 )
 $ErrorActionPreference = "Stop"
-# git/gh пишут обычные сообщения в stderr — проверяем $LASTEXITCODE вручную, а не через Stop
+
+# gh и git пишут обычный текст (прогресс, «release not found») в stderr.
+# Windows PowerShell 5 при "Stop" считает это ошибкой и рвёт скрипт — поэтому внешние команды
+# запускаем через эту обёртку и смотрим только на код возврата.
+function Run-Native([scriptblock]$cmd) {
+  $old = $ErrorActionPreference
+  $ErrorActionPreference = "Continue"
+  try { & $cmd 2>&1 | ForEach-Object { "$_" } | Write-Host } finally { $ErrorActionPreference = $old }
+  return $LASTEXITCODE
+}
 $root = $PSScriptRoot
 $jsonPath = Join-Path $root "apps.json"
 if (!(Test-Path $jsonPath)) { throw "apps.json не найден рядом со скриптом." }
@@ -53,15 +62,18 @@ Write-Host "SHA-256: $sha  ($([math]::Round($size / 1MB, 1)) МБ)"
 $tag = "$App-v$Version"
 $name = Split-Path $file -Leaf
 $notesText = if ($Notes.Count) { ($Notes | ForEach-Object { "- $_" }) -join "`n" } else { "$App $Version" }
-cmd /c "gh release view $tag --repo $Repo >nul 2>&1"
-$ErrorActionPreference = "Continue"
-if ($LASTEXITCODE -eq 0) {
-  gh release upload $tag $file --repo $Repo --clobber
+$old = $ErrorActionPreference; $ErrorActionPreference = "Continue"
+gh release view $tag --repo $Repo 2>&1 | Out-Null
+$exists = ($LASTEXITCODE -eq 0)
+$ErrorActionPreference = $old
+if ($exists) {
+  Write-Host "Релиз $tag уже есть — заменяю файл"
+  $code = Run-Native { gh release upload $tag $file --repo $Repo --clobber }
 } else {
-  gh release create $tag $file --repo $Repo --title "$App $Version" --notes $notesText
+  Write-Host "Создаю релиз $tag (загрузка может занять пару минут)…"
+  $code = Run-Native { gh release create $tag $file --repo $Repo --title "$App $Version" --notes $notesText }
 }
-if ($LASTEXITCODE -ne 0) { throw "gh не смог загрузить релиз." }
-$ErrorActionPreference = "Stop"
+if ($code -ne 0) { throw "gh не смог загрузить релиз." }
 $url = "https://github.com/$Repo/releases/download/$tag/$name"
 
 # ---------- 4. apps.json
@@ -86,9 +98,8 @@ if ($App -eq "launcher") {
 $json = $data | ConvertTo-Json -Depth 20
 [IO.File]::WriteAllText($jsonPath, $json, (New-Object Text.UTF8Encoding $false))
 
-$ErrorActionPreference = "Continue"
-git -C $root add apps.json
-cmd /c "git -C ""$root"" commit -m ""$App $Version"" >nul 2>&1"
-git -C $root push
-if ($LASTEXITCODE -ne 0) { throw "git push не прошёл." }
+Run-Native { git -C $root add apps.json } | Out-Null
+Run-Native { git -C $root commit -m "$App $Version" } | Out-Null
+$code = Run-Native { git -C $root push }
+if ($code -ne 0) { throw "git push не прошёл." }
 Write-Host "`nГотово: $App $Version в лаунчере. Ссылка: $url" -ForegroundColor Green
