@@ -1,155 +1,151 @@
 {
-    "launcher":  {
-                     "version":  "1.1.0",
-                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/launcher-v1.1.0/launcher-1.1.0.exe",
-                     "sha256":  "A1FB38A8B305FB9C4B86416BF32E013A3556C6B0DF3472F809550A78C833AFDC",
-                     "notes":  "Первая версия лаунчера"
-                 },
-    "apps":  [
-                 {
-                     "id":  "nebula",
-                     "name":  "Nebula",
-                     "tagline":  "Анимированные курсоры и питомцы для Windows",
-                     "description":  "Nebula — кастомизатор курсоров: GIF-скины, эффекты, полный набор курсоров Windows, магазин от сообщества, пиксельный редактор, питомцы, которые бегают за курсором, рулетка скинов, друзья и подарки.",
-                     "version":  "3.0.0",
-                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/nebula-v3.0.0/nebula-3.0.0.exe",
-                     "sha256":  "7066020E5486BAC2B971761A2D783F91246A637D2B3791674CDC10247B2591EC",
-                     "size":  188580808,
-                     "exe":  "Nebula.exe",
-                     "accent":  "#3DD5F3",
-                     "icon":  "cursor",
-                     "logo":  "https://raw.githubusercontent.com/nikitabulavko700-stack/nixtand-launcher/main/icons/nebula.png",
-                     "status":  "live",
-                     "tags":  [
-                                  "Курсоры",
-                                  "Питомцы",
-                                  "GIF-скины",
-                                  "Редактор"
-                              ],
-                     "changelog":  [
-                                       "Новый вид в стиле Crosvik: боковая панель, плоские карточки",
-                                       "Главная: скин дня, популярное и новости",
-                                       "Рандомайзер — рулетка скинов с редкостями",
-                                       "Питомцы за курсором: 10 бесплатных и свой магазин",
-                                       "Ежедневная прокрутка с эксклюзивными питомцами"
-                                   ],
-                     "released":  "2026-11-15"
-                 },
-                 {
-                     "id":  "crosvik",
-                     "name":  "Crosvik",
-                     "tagline":  "Оверлей-прицел поверх любой игры",
-                     "description":  "Crosvik — конструктор прицелов с живым превью: слои, картинки и GIF, анимации по выстрелу, перенос прицела из CS2 и Valorant по коду, профили под каждую игру, магазин прицелов и курсоров.",
-                     "version":  "4.0.0",
-                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/crosvik-v4.0.0/crosvik-4.0.0.exe",
-                     "sha256":  "7A4088E6D3601BC903E527F9407E0E87B18DE0C826BBEB7996F74C9C48DA1EC0",
-                     "size":  73042506,
-                     "exe":  "Crosvik.exe",
-                     "accent":  "#3DD5F3",
-                     "icon":  "crosshair",
-                     "logo":  "https://raw.githubusercontent.com/nikitabulavko700-stack/nixtand-launcher/main/icons/crosvik.png",
-                     "status":  "live",
-                     "tags":  [
-                                  "Прицелы",
-                                  "Оверлей",
-                                  "CS2 · Valorant"
-                              ],
-                     "changelog":  [
-                                       "Новый логотип и интерфейс, боковое меню и главная с подборками",
-                                       "Редактор со слоями, картинкой или GIF вместо прицела",
-                                       "Анимации прицела по выстрелу и прицеливанию",
-                                       "Перенос прицела из CS2 и Valorant по коду",
-                                       "Магазин Nebula прямо в Crosvik, прицел в статусе Discord"
-                                   ],
-                     "released":  "2026-11-15"
-                 },
-                 {
-                     "id":  "soundpad",
-                     "name":  "SoundPad",
-                     "tagline":  "Звуки в Discord одной кнопкой",
-                     "description":  "SoundPad — саундпад для голосовых чатов и стримов: горячие клавиши и кнопки мыши, вывод в микрофон через виртуальный кабель, магазин звуков от сообщества, друзья и подарки звуков.",
-                     "version":  "1.0.0",
-                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/soundpad-v1.0.0/soundpad-1.0.0.zip",
-                     "sha256":  "141D4250C9C55FE08754385603983F22DFFB16DB96681F4CA8E98B00C8004DC3",
-                     "size":  70487318,
-                     "exe":  "SoundPad.exe",
-                     "accent":  "#FF7A00",
-                     "icon":  "sound",
-                     "logo":  "https://raw.githubusercontent.com/nikitabulavko700-stack/nixtand-launcher/main/icons/soundpad.png",
-                     "status":  "live",
-                     "tags":  [
-                                  "Саундпад",
-                                  "Discord",
-                                  "Горячие клавиши"
-                              ],
-                     "changelog":  [
-
-                                   ],
-                     "released":  "2026-11-15"
-                 },
-                 {
-                     "id":  "kinetic",
-                     "name":  "Kinetic",
-                     "tagline":  "Оверлей клавиш и мыши для стримов",
-                     "description":  "Kinetic показывает на экране, какие клавиши и кнопки мыши ты нажимаешь: раскладки WASD, osu!, Minecraft PvP и 60%, свои раскладки, 8 тем, KPS/CPS, хромакей для OBS и прозрачный для кликов режим.",
-                     "version":  "1.0.0",
-                     "url":  "",
-                     "sha256":  "",
-                     "size":  0,
-                     "exe":  "Kinetic.exe",
-                     "accent":  "#3DD5F3",
-                     "icon":  "app",
-                     "logo":  "https://raw.githubusercontent.com/nikitabulavko700-stack/nixtand-launcher/main/icons/kinetic.png",
-                     "status":  "soon",
-                     "tags":  [
-                                  "Стримы",
-                                  "Оверлей",
-                                  "OBS"
-                              ]
-                 },
-                 {
-                     "id":  "frostvik",
-                     "name":  "Frostvik",
-                     "tagline":  "Снег и Новый год на рабочем столе",
-                     "description":  "Frostvik — новогодний оверлей: снег поверх всех окон, сугробы с физикой на окнах и панели задач, снежки, гирлянды, ёлка, сани Деда Мороза, салют в полночь и отсчёт до Нового года.",
-                     "version":  "1.0.0",
-                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/frostvik-v1.0.0/frostvik-1.0.0.exe",
-                     "sha256":  "98D0C3F0F0515A2C3758EB5612174438351F833E0858A56BE523E72B2B332518",
-                     "size":  66099046,
-                     "exe":  "Frostvik.exe",
-                     "accent":  "#3DD5F3",
-                     "icon":  "app",
-                     "logo":  "https://raw.githubusercontent.com/nikitabulavko700-stack/nixtand-launcher/main/icons/frostvik.png",
-                     "status":  "live",
-                     "tags":  [
-                                  "Новый год",
-                                  "Снег",
-                                  "Рабочий стол"
-                              ],
-                     "changelog":  [
-                                       "\\"
-                                   ],
-                     "released":  "2026-11-15"
-                 },
-                 {
-                     "id":  "aurora",
-                     "name":  "Aurora",
-                     "tagline":  "Живые обои на рабочий стол",
-                     "description":  "Aurora — видео, GIF и интерактивные обои под иконками рабочего стола, магазин обоев от сообщества, импорт из Wallpaper Engine, друзья и обмен обоями.",
-                     "version":  "1.0.0",
-                     "url":  "",
-                     "sha256":  "",
-                     "size":  0,
-                     "exe":  "Aurora.exe",
-                     "accent":  "#FF7A00",
-                     "icon":  "wallpaper",
-                     "logo":  "https://raw.githubusercontent.com/nikitabulavko700-stack/nixtand-launcher/main/icons/aurora.png",
-                     "status":  "soon",
-                     "tags":  [
-                                  "Обои",
-                                  "Рабочий стол",
-                                  "Видео"
-                              ]
-                 }
-             ]
+  "launcher": {
+    "version": "1.1.0",
+    "url": "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/launcher-v1.1.0/launcher-1.1.0.exe",
+    "sha256": "A1FB38A8B305FB9C4B86416BF32E013A3556C6B0DF3472F809550A78C833AFDC",
+    "notes": "Первая версия лаунчера"
+  },
+  "apps": [
+    {
+      "id": "nebula",
+      "name": "Kursvik",
+      "tagline": "Анимированные курсоры и питомцы для Windows",
+      "description": "Kursvik (бывшая Nebula) — кастомизатор курсоров: GIF-скины, эффекты, полный набор курсоров Windows, магазин от сообщества, пиксельный редактор, питомцы, которые бегают за курсором, рулетка скинов, друзья и подарки.",
+      "version": "3.0.0",
+      "url": "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/nebula-v3.0.0/nebula-3.0.0.exe",
+      "sha256": "7066020E5486BAC2B971761A2D783F91246A637D2B3791674CDC10247B2591EC",
+      "size": 188580808,
+      "exe": "Kursvik.exe",
+      "accent": "#3DD5F3",
+      "icon": "cursor",
+      "logo": "https://raw.githubusercontent.com/nikitabulavko700-stack/nixtand-launcher/main/icons/nebula.png",
+      "status": "live",
+      "tags": [
+        "Курсоры",
+        "Питомцы",
+        "GIF-скины",
+        "Редактор"
+      ],
+      "changelog": [
+        "Новый вид в стиле Crosvik: боковая панель, плоские карточки",
+        "Главная: скин дня, популярное и новости",
+        "Рандомайзер — рулетка скинов с редкостями",
+        "Питомцы за курсором: 10 бесплатных и свой магазин",
+        "Ежедневная прокрутка с эксклюзивными питомцами"
+      ],
+      "released": "2026-11-15"
+    },
+    {
+      "id": "crosvik",
+      "name": "Crosvik",
+      "tagline": "Оверлей-прицел поверх любой игры",
+      "description": "Crosvik — конструктор прицелов с живым превью: слои, картинки и GIF, анимации по выстрелу, перенос прицела из CS2 и Valorant по коду, профили под каждую игру, магазин прицелов и курсоров.",
+      "version": "4.0.0",
+      "url": "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/crosvik-v4.0.0/crosvik-4.0.0.exe",
+      "sha256": "7A4088E6D3601BC903E527F9407E0E87B18DE0C826BBEB7996F74C9C48DA1EC0",
+      "size": 73042506,
+      "exe": "Crosvik.exe",
+      "accent": "#3DD5F3",
+      "icon": "crosshair",
+      "logo": "https://raw.githubusercontent.com/nikitabulavko700-stack/nixtand-launcher/main/icons/crosvik.png",
+      "status": "live",
+      "tags": [
+        "Прицелы",
+        "Оверлей",
+        "CS2 · Valorant"
+      ],
+      "changelog": [
+        "Новый логотип и интерфейс, боковое меню и главная с подборками",
+        "Редактор со слоями, картинкой или GIF вместо прицела",
+        "Анимации прицела по выстрелу и прицеливанию",
+        "Перенос прицела из CS2 и Valorant по коду",
+        "Магазин Kursvik прямо в Crosvik, прицел в статусе Discord"
+      ],
+      "released": "2026-11-15"
+    },
+    {
+      "id": "soundpad",
+      "name": "SoundPad",
+      "tagline": "Звуки в Discord одной кнопкой",
+      "description": "SoundPad — саундпад для голосовых чатов и стримов: горячие клавиши и кнопки мыши, вывод в микрофон через виртуальный кабель, магазин звуков от сообщества, друзья и подарки звуков.",
+      "version": "1.0.0",
+      "url": "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/soundpad-v1.0.0/soundpad-1.0.0.zip",
+      "sha256": "141D4250C9C55FE08754385603983F22DFFB16DB96681F4CA8E98B00C8004DC3",
+      "size": 70487318,
+      "exe": "SoundPad.exe",
+      "accent": "#FF7A00",
+      "icon": "sound",
+      "logo": "https://raw.githubusercontent.com/nikitabulavko700-stack/nixtand-launcher/main/icons/soundpad.png",
+      "status": "live",
+      "tags": [
+        "Саундпад",
+        "Discord",
+        "Горячие клавиши"
+      ],
+      "changelog": [],
+      "released": "2026-11-15"
+    },
+    {
+      "id": "kinetic",
+      "name": "Kinetic",
+      "tagline": "Оверлей клавиш и мыши для стримов",
+      "description": "Kinetic показывает на экране, какие клавиши и кнопки мыши ты нажимаешь: раскладки WASD, osu!, Minecraft PvP и 60%, свои раскладки, 8 тем, KPS/CPS, хромакей для OBS и прозрачный для кликов режим.",
+      "version": "1.0.0",
+      "url": "",
+      "sha256": "",
+      "size": 0,
+      "exe": "Kinetic.exe",
+      "accent": "#3DD5F3",
+      "icon": "app",
+      "logo": "https://raw.githubusercontent.com/nikitabulavko700-stack/nixtand-launcher/main/icons/kinetic.png",
+      "status": "soon",
+      "tags": [
+        "Стримы",
+        "Оверлей",
+        "OBS"
+      ]
+    },
+    {
+      "id": "frostvik",
+      "name": "Frostvik",
+      "tagline": "Снег и Новый год на рабочем столе",
+      "description": "Frostvik — новогодний оверлей: снег поверх всех окон, сугробы с физикой на окнах и панели задач, снежки, гирлянды, ёлка, сани Деда Мороза, салют в полночь и отсчёт до Нового года.",
+      "version": "1.0.0",
+      "url": "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/frostvik-v1.0.0/frostvik-1.0.0.exe",
+      "sha256": "98D0C3F0F0515A2C3758EB5612174438351F833E0858A56BE523E72B2B332518",
+      "size": 66099046,
+      "exe": "Frostvik.exe",
+      "accent": "#3DD5F3",
+      "icon": "app",
+      "logo": "https://raw.githubusercontent.com/nikitabulavko700-stack/nixtand-launcher/main/icons/frostvik.png",
+      "status": "live",
+      "tags": [
+        "Новый год",
+        "Снег",
+        "Рабочий стол"
+      ],
+      "changelog": [],
+      "released": "2026-11-15"
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "tagline": "Живые обои на рабочий стол",
+      "description": "Aurora — видео, GIF и интерактивные обои под иконками рабочего стола, магазин обоев от сообщества, импорт из Wallpaper Engine, друзья и обмен обоями.",
+      "version": "1.0.0",
+      "url": "",
+      "sha256": "",
+      "size": 0,
+      "exe": "Aurora.exe",
+      "accent": "#FF7A00",
+      "icon": "wallpaper",
+      "logo": "https://raw.githubusercontent.com/nikitabulavko700-stack/nixtand-launcher/main/icons/aurora.png",
+      "status": "soon",
+      "tags": [
+        "Обои",
+        "Рабочий стол",
+        "Видео"
+      ]
+    }
+  ]
 }

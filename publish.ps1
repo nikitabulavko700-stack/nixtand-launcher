@@ -9,7 +9,7 @@
        (или сразу по кнопке «Проверить обновления»).
 
   Запускать из папки клона репозитория nixtand-launcher:
-    .\publish.ps1 -App nebula   -Version 2.6.0 -Path "C:\dev\Nebula\bin\publish\Nebula.exe" -Notes "Новый редактор","Исправлены вылеты"
+    .\publish.ps1 -App nebula   -Version 3.1.0 -Path "C:\Dev\Nebula-full\Nebula\bin\publish\Kursvik.exe" -Notes "Nebula теперь Kursvik","Своя панель в трее"
     .\publish.ps1 -App soundpad -Version 1.1.0 -Path "C:\dev\SoundPad\bin\Release\net8.0-windows\win-x64\publish"
     .\publish.ps1 -App launcher -Version 1.0.1 -Path "C:\dev\NixLauncher\bin\Release\net8.0-windows\win-x64\publish\nixtand.exe"
 #>
@@ -85,7 +85,7 @@ if ($App -eq "launcher") {
   if ($Notes.Count) { $data.launcher.notes = ($Notes -join " · ") }
 } else {
   $entry = $data.apps | Where-Object { $_.id -eq $App }
-  if (!$entry) { throw "Приложения '$App' нет в apps.json — добавь его блок вручную (скопируй nebula и поменяй поля)." }
+  if (!$entry) { throw "Приложения '$App' нет в apps.json — добавь его блок вручную (скопируй блок nebula/Kursvik и поменяй поля)." }
   $set = { param($k, $v) if ($entry.PSObject.Properties[$k]) { $entry.$k = $v } else { $entry | Add-Member -NotePropertyName $k -NotePropertyValue $v } }
   & $set "version" $Version
   & $set "url" $url
