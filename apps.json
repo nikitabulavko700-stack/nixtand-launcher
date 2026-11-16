@@ -112,10 +112,10 @@
                      "name":  "Frostvik",
                      "tagline":  "Снег и Новый год на рабочем столе",
                      "description":  "Frostvik — новогодний оверлей: снег поверх всех окон, сугробы с физикой на окнах и панели задач, снежки, гирлянды, ёлка, сани Деда Мороза, салют в полночь и отсчёт до Нового года.",
-                     "version":  "1.0.0",
-                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/frostvik-v1.0.0/frostvik-1.0.0.exe",
-                     "sha256":  "98D0C3F0F0515A2C3758EB5612174438351F833E0858A56BE523E72B2B332518",
-                     "size":  66099046,
+                     "version":  "1.0.1",
+                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/frostvik-v1.0.1/frostvik-1.0.1.exe",
+                     "sha256":  "0B0E8FE5E68B0AE33FB30F36E4F8EF7BD7FE18390A02B13AEF2D34671E1FA603",
+                     "size":  145463091,
                      "exe":  "Frostvik.exe",
                      "accent":  "#3DD5F3",
                      "icon":  "app",
@@ -127,9 +127,9 @@
                                   "Рабочий стол"
                               ],
                      "changelog":  [
-
+                                       "Обновления прямо в программе — вышла новая версия, сверху появится кнопка «Обновить»"
                                    ],
-                     "released":  "2026-11-15"
+                     "released":  "2026-11-16"
                  },
                  {
                      "id":  "aurora",
