@@ -1,9 +1,9 @@
 {
     "launcher":  {
-                     "version":  "1.1.0",
-                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/launcher-v1.1.0/launcher-1.1.0.exe",
-                     "sha256":  "A1FB38A8B305FB9C4B86416BF32E013A3556C6B0DF3472F809550A78C833AFDC",
-                     "notes":  "Первая версия лаунчера"
+                     "version":  "1.2.0",
+                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/launcher-v1.2.0/launcher-1.2.0.exe",
+                     "sha256":  "2FE729B7C824123DDDEC4300F5E22796FB6D24E272357C6B1D21E16D3E86A550",
+                     "notes":  "Лаунчер обновляется сам · Kinetic и Aurora теперь можно скачать"
                  },
     "apps":  [
                  {
