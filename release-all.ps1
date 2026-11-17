@@ -67,9 +67,9 @@ $apps = @(
      Notes = @("Новый значок Aurora в стиле nixtand",
                "Живые обои под иконками рабочего стола: видео, GIF и интерактивные обои",
                "Импорт из Wallpaper Engine, плейлист, пауза в играх") },
-  @{ Id = "launcher"; Version = "1.2.1"; Name = "Лаунчер nixtand"
+  @{ Id = "launcher"; Version = "1.3.0"; Name = "Лаунчер nixtand"
      Projects = @("$Dev\nixtand-launcher\nixtand-launcher\NixLauncher\NixLauncher.csproj")
-     Notes = @("Новые значки SoundPad и Aurora", "Лаунчер обновляется сам") }
+     Notes = @("Новая вкладка «Главная»: карусель, «Продолжить», лента обновлений", "8 тем оформления", "Живой фон и фильтры в магазине") }
 )
 if ($Only.Count) {
   $apps = @($apps | Where-Object { $Only -contains $_.Id })
