@@ -17,6 +17,7 @@
 param(
   [string[]] $Only = @(),
   [switch]   $SkipServer,
+  [switch]   $Server,          # выложить сервер аккаунтов даже вместе с -Only
   [string]   $Dev = "C:\Dev"
 )
 $ErrorActionPreference = "Stop"
@@ -38,13 +39,15 @@ $apps = @(
                "Оформление профиля (рамка, фон, цвет ника) видят все, а не только ты",
                "Питомец не пропадает в играх на весь экран",
                "Обновления прямо в программе — кнопка «Обновить» сверху") },
-  @{ Id = "soundpad"; Version = "2.0.0"; Name = "SoundPad"; Folder = $true
+  @{ Id = "soundpad"; Version = "2.0.2"; Name = "SoundPad"; Folder = $true
      Projects = @("$Dev\SoundPad-full\SoundPad\SoundPad.csproj")
-     Notes = @("Новый вид как в Crosvik, всё в одном окне, меню сворачивается, цвет оформления на выбор",
+     Notes = @("«Назвать по словам» (правый клик по звуку): вместо «0104» — первые слова из звука, можно сразу для всех",
+               "Кнопку чата в игре можно выбрать самому — пока чат открыт, звуки на буквах молчат",
+               "Новый вид как в Crosvik, всё в одном окне, меню сворачивается, цвет оформления на выбор",
                "Колесо звуков поверх игр (и полноэкранных) — свои звуки по местам",
                "Повтор: последние 30 секунд звука с компьютера одной клавишей",
                "Войс в игре зажимается сам, пока играет звук; режим печати — звуки молчат, пока пишешь",
-               "Профили как в Kursvik, наборы звуков, достижения, обновления прямо в программе") },
+               "Исправлено: выбор звуков колеса и панели больше не сбрасывается") },
   @{ Id = "crosvik"; Version = "4.0.1"; Name = "Crosvik"
      Projects = @("$Dev\Crosvik\Crosvik\Crosvik.csproj")
      Notes = @("Обновления прямо в программе — вышла новая версия, сверху появится кнопка «Обновить»") },
@@ -57,15 +60,14 @@ $apps = @(
                "Раскладки WASD, osu!, Minecraft PvP и 60%, свои раскладки",
                "8 тем, KPS/CPS, хромакей для OBS, клики сквозь оверлей",
                "Вход тем же аккаунтом nixtand") },
-  @{ Id = "aurora"; Version = "1.0.0"; Name = "Aurora"; Folder = $true
+  @{ Id = "aurora"; Version = "1.0.1"; Name = "Aurora"; Folder = $true
      Projects = @("$Dev\Aurora\Aurora\src\Aurora.Engine\Aurora.Engine.csproj", "$Dev\Aurora\Aurora\src\Aurora.App\Aurora.App.csproj")
-     Notes = @("Первый выпуск: живые обои под иконками рабочего стола",
-               "Видео, GIF и интерактивные обои, магазин обоев",
-               "Импорт из Wallpaper Engine, плейлист, пауза в играх",
-               "Друзья и обмен обоями, вход тем же аккаунтом nixtand") },
-  @{ Id = "launcher"; Version = "1.2.0"; Name = "Лаунчер nixtand"
+     Notes = @("Новый значок Aurora в стиле nixtand",
+               "Живые обои под иконками рабочего стола: видео, GIF и интерактивные обои",
+               "Импорт из Wallpaper Engine, плейлист, пауза в играх") },
+  @{ Id = "launcher"; Version = "1.2.1"; Name = "Лаунчер nixtand"
      Projects = @("$Dev\nixtand-launcher\nixtand-launcher\NixLauncher\NixLauncher.csproj")
-     Notes = @("Лаунчер обновляется сам", "Kinetic и Aurora теперь можно скачать") }
+     Notes = @("Новые значки SoundPad и Aurora", "Лаунчер обновляется сам") }
 )
 if ($Only.Count) { $apps = $apps | Where-Object { $Only -contains $_.Id } }
 
@@ -73,13 +75,16 @@ foreach ($tool in "dotnet", "gh", "git") {
   if (!(Get-Command $tool -ErrorAction SilentlyContinue)) { throw "Не найдено: $tool. Установи и запусти заново." }
 }
 
-# ---------- 0. каталог: свежие описания — коммитим и подтягиваем чужие изменения, чтобы push не упал
-Run-Native { git -C $root add apps.json release-all.ps1 } | Out-Null
-Run-Native { git -C $root commit -m "Каталог: описания перед выпуском" } | Out-Null
-if ((Run-Native { git -C $root pull --rebase }) -ne 0) { throw "git pull не прошёл — разберись с конфликтом в репозитории и запусти снова." }
+# ---------- 0. каталог: берём свежий с GitHub (он — главный; publish.ps1 сам допишет новые версии и отправит)
+foreach ($d in "rebase-merge", "rebase-apply") {
+  if (Test-Path (Join-Path $root ".git\$d")) { Run-Native { git -C $root rebase --abort } | Out-Null }
+}
+if (Test-Path (Join-Path $root ".git\MERGE_HEAD")) { Run-Native { git -C $root merge --abort } | Out-Null }
+if ((Run-Native { git -C $root fetch origin main }) -ne 0) { throw "git fetch не прошёл — проверь интернет и вход в GitHub (gh auth login)." }
+Run-Native { git -C $root reset --hard origin/main } | Out-Null
 
 # ---------- 1. сервер аккаунтов
-if (!$SkipServer -and !$Only.Count) {
+if (!$SkipServer -and (!$Only.Count -or $Server)) {
   $acc = Join-Path $Dev "nixtand-accounts"
   if (Test-Path (Join-Path $acc "wrangler.jsonc")) {
     Write-Host "`n=== Сервер аккаунтов (оформление профиля) ===" -ForegroundColor Cyan
