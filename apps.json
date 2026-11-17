@@ -42,8 +42,8 @@
                      "description":  "Crosvik — конструктор прицелов с живым превью: слои, картинки и GIF, анимации по выстрелу, перенос прицела из CS2 и Valorant по коду, профили под каждую игру, магазин прицелов и курсоров.",
                      "version":  "4.0.1",
                      "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/crosvik-v4.0.1/crosvik-4.0.1.exe",
-                     "sha256":  "B725B99C3242B8B15D5A77B5176B1FA26BEE919667DD38C62EB4A63B5AAD5C56",
-                     "size":  172084045,
+                     "sha256":  "7A553D0EC9BA801F35E6F88C6E9A7BCEEB7F7DAEF0E262DCF60095F1A0C0553D",
+                     "size":  172088141,
                      "exe":  "Crosvik.exe",
                      "accent":  "#3DD5F3",
                      "icon":  "crosshair",
@@ -57,7 +57,7 @@
                      "changelog":  [
                                        "Обновления прямо в программе — вышла новая версия, сверху появится кнопка «Обновить»"
                                    ],
-                     "released":  "2026-11-16"
+                     "released":  "2026-11-17"
                  },
                  {
                      "id":  "soundpad",
