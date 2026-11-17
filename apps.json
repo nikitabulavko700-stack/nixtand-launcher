@@ -36,9 +36,9 @@
                      "name":  "Crosvik",
                      "tagline":  "Оверлей-прицел поверх любой игры",
                      "description":  "Crosvik — конструктор прицелов с живым превью: слои, картинки и GIF, анимации по выстрелу, перенос прицела из CS2 и Valorant по коду, профили под каждую игру, магазин прицелов и курсоров.",
-                     "version":  "4.0.1",
-                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/crosvik-v4.0.1/crosvik-4.0.1.exe",
-                     "sha256":  "7A553D0EC9BA801F35E6F88C6E9A7BCEEB7F7DAEF0E262DCF60095F1A0C0553D",
+                     "version":  "4.0.2",
+                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/crosvik-v4.0.2/crosvik-4.0.2.exe",
+                     "sha256":  "F28AC2524E424AB4CAF30E6BD964CEE33CD7F5A329FFADB74A20E66B18079032",
                      "size":  172088141,
                      "exe":  "Crosvik.exe",
                      "accent":  "#3DD5F3",
@@ -51,7 +51,7 @@
                                   "CS2 · Valorant"
                               ],
                      "changelog":  [
-                                       "Обновления прямо в программе — вышла новая версия, сверху появится кнопка «Обновить»"
+                                       "Обновление теперь видно: окно затемняется и пишет «Установка обновления…» — до перезапуска ничего случайно не нажмёшь"
                                    ],
                      "released":  "2026-11-17"
                  },
