@@ -134,10 +134,10 @@
                      "name":  "Aurora",
                      "tagline":  "Живые обои на рабочий стол",
                      "description":  "Aurora — видео, GIF и интерактивные обои под иконками рабочего стола, магазин обоев от сообщества, импорт из Wallpaper Engine, друзья и обмен обоями.",
-                     "version":  "1.0.1",
-                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/aurora-v1.0.1/aurora-1.0.1.zip",
-                     "sha256":  "D40CDBC9B5049F8AA29BAEA0B1B852ABE5276F93802B78BB48A15BB40745B984",
-                     "size":  144957592,
+                     "version":  "1.0.2",
+                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/aurora-v1.0.2/aurora-1.0.2.zip",
+                     "sha256":  "8B12544A11560C26752FEC86394661C3012E90E512BA390D97E130BE6711C005",
+                     "size":  144957618,
                      "exe":  "Aurora.exe",
                      "accent":  "#3DD5F3",
                      "icon":  "wallpaper",
@@ -150,9 +150,7 @@
                               ],
                      "released":  "2026-11-17",
                      "changelog":  [
-                                       "Новый значок Aurora в стиле nixtand",
-                                       "Живые обои под иконками рабочего стола: видео, GIF и интерактивные обои",
-                                       "Импорт из Wallpaper Engine, плейлист, пауза в играх"
+                                       "Обновление теперь видно: окно затемняется и пишет «Установка обновления…» — до перезапуска ничего случайно не нажмёшь"
                                    ]
                  }
              ]
