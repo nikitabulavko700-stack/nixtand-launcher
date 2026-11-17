@@ -13,8 +13,8 @@
                      "description":  "Kursvik (бывшая Nebula) — кастомизатор курсоров: GIF-скины, эффекты, полный набор курсоров Windows, магазин от сообщества, пиксельный редактор, питомцы, которые бегают за курсором, рулетка скинов, друзья и подарки.",
                      "version":  "3.1.0",
                      "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/nebula-v3.1.0/nebula-3.1.0.exe",
-                     "sha256":  "94366087644BC754400DE76D06B5DC3A461CF1D41D64B88C8B892893FAEA5FAF",
-                     "size":  188675026,
+                     "sha256":  "C798740D66B037CBC6A3103AE38DE561AAA0C2FEB8B74F1254C67C869F9392E3",
+                     "size":  188683218,
                      "exe":  "Kursvik.exe",
                      "accent":  "#3DD5F3",
                      "icon":  "cursor",
@@ -33,7 +33,7 @@
                                        "Питомец не пропадает в играх на весь экран",
                                        "Обновления прямо в программе — кнопка «Обновить» сверху"
                                    ],
-                     "released":  "2026-11-16"
+                     "released":  "2026-11-17"
                  },
                  {
                      "id":  "crosvik",
