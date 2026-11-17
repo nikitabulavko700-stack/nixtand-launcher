@@ -92,8 +92,8 @@
                      "description":  "Kinetic показывает на экране, какие клавиши и кнопки мыши ты нажимаешь: раскладки WASD, osu!, Minecraft PvP и 60%, свои раскладки, 8 тем, KPS/CPS, хромакей для OBS и прозрачный для кликов режим.",
                      "version":  "1.0.0",
                      "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/kinetic-v1.0.0/kinetic-1.0.0.exe",
-                     "sha256":  "24381570770EA4B9F016B62FDABB3C1AC2764AB0C4CFA2275053C998A2221C69",
-                     "size":  161872890,
+                     "sha256":  "EE3F3EB922462348D99C925520D41D2CFEDEB05ECBF5C0A97CD32A5C74DE11C3",
+                     "size":  161876986,
                      "exe":  "Kinetic.exe",
                      "accent":  "#3DD5F3",
                      "icon":  "app",
@@ -104,7 +104,7 @@
                                   "Оверлей",
                                   "OBS"
                               ],
-                     "released":  "2026-11-16",
+                     "released":  "2026-11-17",
                      "changelog":  [
                                        "Первый выпуск: оверлей клавиш и мыши для стримов",
                                        "Раскладки WASD, osu!, Minecraft PvP и 60%, свои раскладки",
