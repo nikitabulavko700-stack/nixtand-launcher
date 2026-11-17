@@ -34,35 +34,26 @@ function Run-Native([scriptblock]$cmd) {
 
 # ---------- что выкладываем
 $apps = @(
-  @{ Id = "nebula"; Version = "3.1.0"; Name = "Kursvik"
+  @{ Id = "nebula"; Version = "3.1.1"; Name = "Kursvik"
      Projects = @("$Dev\Kursvik\Kursvik\Kursvik.csproj")
-     Notes = @("Nebula теперь Kursvik — скины, питомцы и аккаунт остались на месте",
-               "Своя панель в трее: текущий скин, быстрые действия, последние скины",
-               "Оформление профиля (рамка, фон, цвет ника) видят все, а не только ты",
-               "Питомец не пропадает в играх на весь экран",
-               "Обновления прямо в программе — кнопка «Обновить» сверху") },
+     Notes = @("Обновление теперь видно: окно затемняется и пишет «Установка обновления…» — до перезапуска ничего случайно не нажмёшь") },
   @{ Id = "soundpad"; Version = "2.0.3"; Name = "SoundPad"; Folder = $true
      Projects = @("$Dev\SoundPad-full\SoundPad\SoundPad.csproj")
      Notes = @("Колесо звуков в CS2 и других играх: тяни мышь в сторону звука — стик в центре покажет выбор, клик — сыграть",
                "Пока колесо открыто, камера в игре не крутится и выстрела не будет",
                "Обновление теперь видно: окно затемняется и пишет «Установка обновления…»") },
-  @{ Id = "crosvik"; Version = "4.0.1"; Name = "Crosvik"
+  @{ Id = "crosvik"; Version = "4.0.2"; Name = "Crosvik"
      Projects = @("$Dev\Crosvik\Crosvik\Crosvik.csproj")
-     Notes = @("Обновления прямо в программе — вышла новая версия, сверху появится кнопка «Обновить»") },
-  @{ Id = "frostvik"; Version = "1.0.1"; Name = "Frostvik"
+     Notes = @("Обновление теперь видно: окно затемняется и пишет «Установка обновления…» — до перезапуска ничего случайно не нажмёшь") },
+  @{ Id = "frostvik"; Version = "1.0.2"; Name = "Frostvik"
      Projects = @("$Dev\Snowvik\Frostvik\Frostvik.csproj")
-     Notes = @("Обновления прямо в программе — вышла новая версия, сверху появится кнопка «Обновить»") },
-  @{ Id = "kinetic"; Version = "1.0.0"; Name = "Kinetic"
+     Notes = @("Обновление теперь видно: окно затемняется и пишет «Установка обновления…» — до перезапуска ничего случайно не нажмёшь") },
+  @{ Id = "kinetic"; Version = "1.0.1"; Name = "Kinetic"
      Projects = @("$Dev\Kinetic\Kinetic\Kinetic.csproj")
-     Notes = @("Первый выпуск: оверлей клавиш и мыши для стримов",
-               "Раскладки WASD, osu!, Minecraft PvP и 60%, свои раскладки",
-               "8 тем, KPS/CPS, хромакей для OBS, клики сквозь оверлей",
-               "Вход тем же аккаунтом nixtand") },
-  @{ Id = "aurora"; Version = "1.0.1"; Name = "Aurora"; Folder = $true
+     Notes = @("Обновление теперь видно: окно затемняется и пишет «Установка обновления…» — до перезапуска ничего случайно не нажмёшь") },
+  @{ Id = "aurora"; Version = "1.0.2"; Name = "Aurora"; Folder = $true
      Projects = @("$Dev\Aurora\Aurora\src\Aurora.Engine\Aurora.Engine.csproj", "$Dev\Aurora\Aurora\src\Aurora.App\Aurora.App.csproj")
-     Notes = @("Новый значок Aurora в стиле nixtand",
-               "Живые обои под иконками рабочего стола: видео, GIF и интерактивные обои",
-               "Импорт из Wallpaper Engine, плейлист, пауза в играх") },
+     Notes = @("Обновление теперь видно: окно затемняется и пишет «Установка обновления…» — до перезапуска ничего случайно не нажмёшь") },
   @{ Id = "launcher"; Version = "1.3.0"; Name = "Лаунчер nixtand"
      Projects = @("$Dev\nixtand-launcher\nixtand-launcher\NixLauncher\NixLauncher.csproj")
      Notes = @("Теперь это Nixtand Launcher: главная с каруселью, лента обновлений, заставка при запуске", "Профиль как в Kursvik: рамки, фон шапки, цветной ник, новые галочки", "8 тем (по умолчанию «Лёд»), выбор частоты кадров, плавные переходы", "Красивая полоса загрузки; лаунчер больше не качает то, что приложение обновило само") }
