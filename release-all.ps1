@@ -69,7 +69,7 @@ $apps = @(
                "Импорт из Wallpaper Engine, плейлист, пауза в играх") },
   @{ Id = "launcher"; Version = "1.3.0"; Name = "Лаунчер nixtand"
      Projects = @("$Dev\nixtand-launcher\nixtand-launcher\NixLauncher\NixLauncher.csproj")
-     Notes = @("Новая вкладка «Главная»: карусель, «Продолжить», лента обновлений", "8 тем оформления", "Живой фон и фильтры в магазине") }
+     Notes = @("Новая вкладка «Главная»: карусель, «Продолжить», лента обновлений", "Профиль как в Kursvik: рамки, фон шапки, цветной ник", "8 тем оформления, новая шапка и меню", "Плавные переходы и прокрутка, живой фон") }
 )
 if ($Only.Count) {
   $apps = @($apps | Where-Object { $Only -contains $_.Id })
