@@ -145,10 +145,10 @@
                      "name":  "Aurora",
                      "tagline":  "Живые обои на рабочий стол",
                      "description":  "Aurora — видео, GIF и интерактивные обои под иконками рабочего стола, магазин обоев от сообщества, импорт из Wallpaper Engine, друзья и обмен обоями.",
-                     "version":  "1.0.0",
-                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/aurora-v1.0.0/aurora-1.0.0.zip",
-                     "sha256":  "8841EC41C5451BB39913B52A68471A8BA61919C99DAC08E26B2DF32F5220C99B",
-                     "size":  145237141,
+                     "version":  "1.0.1",
+                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/aurora-v1.0.1/aurora-1.0.1.zip",
+                     "sha256":  "939653BDF8EF470B61993CF66547355BF0021260F89A9C3F01EC1E7D209B4438",
+                     "size":  144957153,
                      "exe":  "Aurora.exe",
                      "accent":  "#FF7A00",
                      "icon":  "wallpaper",
@@ -159,12 +159,11 @@
                                   "Рабочий стол",
                                   "Видео"
                               ],
-                     "released":  "2026-11-16",
+                     "released":  "2026-11-17",
                      "changelog":  [
-                                       "Первый выпуск: живые обои под иконками рабочего стола",
-                                       "Видео, GIF и интерактивные обои, магазин обоев",
-                                       "Импорт из Wallpaper Engine, плейлист, пауза в играх",
-                                       "Друзья и обмен обоями, вход тем же аккаунтом nixtand"
+                                       "Новый значок Aurora в стиле nixtand",
+                                       "Живые обои под иконками рабочего стола: видео, GIF и интерактивные обои",
+                                       "Импорт из Wallpaper Engine, плейлист, пауза в играх"
                                    ]
                  }
              ]
