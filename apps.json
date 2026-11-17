@@ -119,8 +119,8 @@
                      "description":  "Frostvik — новогодний оверлей: снег поверх всех окон, сугробы с физикой на окнах и панели задач, снежки, гирлянды, ёлка, сани Деда Мороза, салют в полночь и отсчёт до Нового года.",
                      "version":  "1.0.1",
                      "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/frostvik-v1.0.1/frostvik-1.0.1.exe",
-                     "sha256":  "0B0E8FE5E68B0AE33FB30F36E4F8EF7BD7FE18390A02B13AEF2D34671E1FA603",
-                     "size":  145463091,
+                     "sha256":  "15F2AC3CE844761C2F4F44106DDE9F71F31C4DE00AD61DA38375AC0DBAB02128",
+                     "size":  145467187,
                      "exe":  "Frostvik.exe",
                      "accent":  "#3DD5F3",
                      "icon":  "app",
@@ -134,7 +134,7 @@
                      "changelog":  [
                                        "Обновления прямо в программе — вышла новая версия, сверху появится кнопка «Обновить»"
                                    ],
-                     "released":  "2026-11-16"
+                     "released":  "2026-11-17"
                  },
                  {
                      "id":  "aurora",
