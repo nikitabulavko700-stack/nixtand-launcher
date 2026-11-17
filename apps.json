@@ -86,9 +86,9 @@
                      "name":  "Kinetic",
                      "tagline":  "Оверлей клавиш и мыши для стримов",
                      "description":  "Kinetic показывает на экране, какие клавиши и кнопки мыши ты нажимаешь: раскладки WASD, osu!, Minecraft PvP и 60%, свои раскладки, 8 тем, KPS/CPS, хромакей для OBS и прозрачный для кликов режим.",
-                     "version":  "1.0.0",
-                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/kinetic-v1.0.0/kinetic-1.0.0.exe",
-                     "sha256":  "EE3F3EB922462348D99C925520D41D2CFEDEB05ECBF5C0A97CD32A5C74DE11C3",
+                     "version":  "1.0.1",
+                     "url":  "https://github.com/nikitabulavko700-stack/nixtand-launcher/releases/download/kinetic-v1.0.1/kinetic-1.0.1.exe",
+                     "sha256":  "6A4851EBE52A7029A4089893052AE91302860F7C88A9E0CCDCAB63BDFFF8EEE7",
                      "size":  161876986,
                      "exe":  "Kinetic.exe",
                      "accent":  "#3DD5F3",
@@ -102,10 +102,7 @@
                               ],
                      "released":  "2026-11-17",
                      "changelog":  [
-                                       "Первый выпуск: оверлей клавиш и мыши для стримов",
-                                       "Раскладки WASD, osu!, Minecraft PvP и 60%, свои раскладки",
-                                       "8 тем, KPS/CPS, хромакей для OBS, клики сквозь оверлей",
-                                       "Вход тем же аккаунтом nixtand"
+                                       "Обновление теперь видно: окно затемняется и пишет «Установка обновления…» — до перезапуска ничего случайно не нажмёшь"
                                    ]
                  },
                  {
