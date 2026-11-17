@@ -21,6 +21,8 @@ param(
   [string]   $Dev = "C:\Dev"
 )
 $ErrorActionPreference = "Stop"
+# из .cmd (powershell -File) список приходит одной строкой «soundpad,aurora,launcher» — разбиваем сами
+$Only = @($Only | ForEach-Object { $_ -split '[,;\s]+' } | Where-Object { $_ })
 $root = $PSScriptRoot
 $build = Join-Path $root "build"
 
@@ -69,7 +71,10 @@ $apps = @(
      Projects = @("$Dev\nixtand-launcher\nixtand-launcher\NixLauncher\NixLauncher.csproj")
      Notes = @("Новые значки SoundPad и Aurora", "Лаунчер обновляется сам") }
 )
-if ($Only.Count) { $apps = $apps | Where-Object { $Only -contains $_.Id } }
+if ($Only.Count) {
+  $apps = @($apps | Where-Object { $Only -contains $_.Id })
+  if (!$apps.Count) { throw "Ни одно приложение не подходит под -Only $($Only -join ', '). Есть: nebula, soundpad, crosvik, frostvik, kinetic, aurora, launcher." }
+}
 
 foreach ($tool in "dotnet", "gh", "git") {
   if (!(Get-Command $tool -ErrorAction SilentlyContinue)) { throw "Не найдено: $tool. Установи и запусти заново." }
